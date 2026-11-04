@@ -41,12 +41,12 @@
 
         /* Foto Profil Bulat */
         .avatar-container {
-            width: 95px;
-            height: 95px;
+            width: 100px;
+            height: 100px;
             margin: 0 auto;
             position: relative;
-            top: -48px;
-            margin-bottom: -30px;
+            top: -50px;
+            margin-bottom: -35px;
         }
 
         .avatar {
@@ -55,17 +55,13 @@
             border-radius: 50%;
             border: 4px solid #ffffff;
             box-shadow: 0 8px 20px rgba(219, 39, 119, 0.25);
-            background: linear-gradient(135deg, #fbcfe8, #f472b6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
+            object-fit: cover;
             cursor: pointer;
             transition: transform 0.3s ease;
         }
 
         .avatar:hover {
-            transform: scale(1.1) rotate(10deg);
+            transform: scale(1.1) rotate(5deg);
         }
 
         h1 {
@@ -235,9 +231,9 @@
 <body>
 
     <div class="card">
-        <!-- Foto Profil Bulat Interaktif -->
+        <!-- Foto Profil dari GitHub -->
         <div class="avatar-container">
-            <div class="avatar" onclick="alert('Halo! Selamat datang di profil Nasywa ✨')">🎓</div>
+            <img src="foto.jpg" alt="Foto Nasywa" class="avatar" onclick="alert('Halo! Selamat datang di profil Nasywa ✨')">
         </div>
 
         <!-- Nama dan Status -->
@@ -248,7 +244,7 @@
 
         <!-- Bio Deskripsi -->
         <p class="bio">
-            Halo! Saya mahasiswa yang antusias dalam bermain roblox khususnya di game membangun restoran sushi
+            Halo! Saya mahasiswa yang antusias di dunia roblox
         </p>
 
         <!-- Hobi & Minat -->
@@ -260,7 +256,7 @@
             <div class="tag" onclick="alert('Hobi: Desain Grafis 🎨')">Desain Grafis</div>
         </div>
 
-        <!-- Kemampuan (Bisa dipencet untuk animasi ulang) -->
+        <!-- Kemampuan -->
         <div class="section-title">KEMAMPUAN</div>
         <div class="skills-container">
             <div class="skill-item" onclick="alert('Kemampuan Bermain ROBLOX: Pro Gamer! 😎')">
@@ -275,7 +271,7 @@
 
             <div class="skill-item" onclick="alert('Kemampuan Cloud Computing: Pembelajar Aktif ☁️')">
                 <div class="skill-header">
-                    <span class="skill-name">Bobok</span>
+                    <span class="skill-name">Cloud Computing</span>
                     <span class="skill-percent">80%</span>
                 </div>
                 <div class="progress-bar">
@@ -285,7 +281,7 @@
 
             <div class="skill-item" onclick="alert('Kemampuan Web Development: Terus Meningkat 🚀')">
                 <div class="skill-header">
-                    <span class="skill-name">Makan</span>
+                    <span class="skill-name">HTML & CSS</span>
                     <span class="skill-percent">85%</span>
                 </div>
                 <div class="progress-bar">
@@ -294,7 +290,7 @@
             </div>
         </div>
 
-        <!-- Kontak Interaktif -->
+        <!-- Kontak -->
         <div class="section-title">KONTAK</div>
         <div class="contact-info">
             <a href="mailto:mahasiswa@email.com" class="contact-btn">
