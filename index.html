@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nasywa Kayana - Portfolio & Profile</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Nasywa Kayana - Portfolio</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,7 +12,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background: #0f172a;
+            background-color: #0f172a;
             color: #f8fafc;
             display: flex;
             justify-content: center;
@@ -22,41 +21,17 @@
             padding: 20px;
         }
         .container {
-            background: #1e293b;
+            background-color: #1e293b;
             width: 100%;
-            max-width: 500px;
+            max-width: 420px;
             padding: 40px 30px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
             text-align: center;
             border: 1px solid #334155;
-            animation: fadeIn 0.8s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .avatar-box {
-            position: relative;
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 20px;
-        }
-        .avatar {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #38bdf8, #6366f1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 40px;
-            color: white;
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
         }
         h1 {
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 22px;
             color: #f8fafc;
             margin-bottom: 5px;
         }
@@ -65,60 +40,62 @@
             color: #38bdf8;
             margin-bottom: 20px;
             font-weight: 500;
-            letter-spacing: 0.5px;
         }
         .bio {
-            font-size: 14px;
+            font-size: 13px;
             color: #94a3b8;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            padding: 0 10px;
+            line-height: 1.5;
+            margin-bottom: 25px;
         }
         .menu-list {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
         }
         .btn-link {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #0f172a;
+            display: block;
+            background-color: #0f172a;
             color: #f8fafc;
             padding: 14px 20px;
-            border-radius: 12px;
+            border-radius: 10px;
             text-decoration: none;
             font-size: 14px;
             font-weight: 600;
             border: 1px solid #334155;
-            transition: all 0.3s ease;
-        }
-        .btn-link i.left-icon {
-            color: #38bdf8;
-            margin-right: 12px;
-            font-size: 18px;
-        }
-        .btn-content {
-            display: flex;
-            align-items: center;
-            flex: 1;
-            text-align: left;
+            transition: all 0.2s ease;
         }
         .btn-link:hover {
-            background: #38bdf8;
+            background-color: #38bdf8;
             color: #0f172a;
             border-color: #38bdf8;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
         }
-        .btn-link:hover i.left-icon,
-        .btn-link:hover i.right-icon {
-            color: #0f172a;
-        }
-        .right-icon {
+        footer {
+            margin-top: 25px;
+            font-size: 11px;
             color: #64748b;
-            font-size: 12px;
-            transition: transform 0.3s;
         }
-        .btn-link:hover .right-icon {
-            transform: translateX(4
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Nasywa Kayana</h1>
+        <div class="role">Manajemen Informasi Komunikasi</div>
+        
+        <p class="bio">
+            Mahasiswa aktif yang sedang bermain ROBLOX.
+        </p>
+
+        <div class="menu-list">
+            <a href="mailto:mahasiswa@email.com" class="btn-link">Kirim Email</a>
+            <a href="https://github.com/aeyoouuw" target="_blank" class="btn-link">GitHub Profile</a>
+            <a href="#" onclick="alert('Mata Kuliah: Cloud Computing'); return false;" class="btn-link">Info Mata Kuliah</a>
+        </div>
+
+        <footer>
+            &copy; 2026 Nasywa Kayana
+        </footer>
+    </div>
+
+</body>
+</html>
